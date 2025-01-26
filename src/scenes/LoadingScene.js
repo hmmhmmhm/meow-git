@@ -48,7 +48,6 @@ export default class LoadingScene extends Phaser.Scene {
       frameWidth: 16,
       frameHeight: 16,
     });
-    
 
     this.load.spritesheet("beam", beamImg, {
       frameWidth: 75,
@@ -78,9 +77,9 @@ export default class LoadingScene extends Phaser.Scene {
     this.anims.create({
       key: "bat_anim",
       frames: this.anims.generateFrameNumbers("bat", {
-      start: 0,
+        start: 0,
         end: 4,
-    }),        
+      }),
       frameRate: 12,
       repeat: -1,
     });
@@ -125,10 +124,10 @@ export default class LoadingScene extends Phaser.Scene {
       repeat: -1,
     });
     this.scene.anims.create({
-      key: "idle_anim",  // 애니메이션 키
-      frames: this.scene.anims.generateFrameNumbers("idle"),  // 'idle' 이미지에서 프레임을 가져옵니다.
-      frameRate: 8,  // 초당 8프레임
-      repeat: -1,  // 무한 반복
-    }
+      key: "idle_anim", // 애니메이션 키
+      frames: this.scene.anims.generateFrameNumbers("idle"), // 'idle' 이미지에서 프레임을 가져옵니다.
+      frameRate: 8, // 초당 8프레임
+      repeat: -1, // 무한 반복
+    });
   }
 }
