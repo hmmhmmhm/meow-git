@@ -13,9 +13,10 @@ export default class MainScene extends Phaser.Scene {
     bg.fillRect(0, 0, Config.width, Config.height);
     bg.setScrollFactor(0);
 
-    this.add
-      .bitmapText(Config.width / 2, 150, "pixelFont", "Meow Meow Fuzzyface", 40)
-      .setOrigin(0.5);
+    // TODO 비트맵 텍스트 로딩에 문제가 있으세욥!
+    // this.add
+    //   .bitmapText(Config.width / 2, 150, "pixelFont", "Meow Meow Fuzzyface", 40)
+    //   .setOrigin(0.5);
 
     this.add.image(Config.width / 2, Config.height / 2, "cat");
 

@@ -59,15 +59,16 @@ export default class LoadingScene extends Phaser.Scene {
     });
 
     this.load.bitmapFont("pixelFont", fontPng, fontXml);
-    this.load.audio("audio_beam", fireOgg);
-    this.load.audio("audio_explosion", popOgg);
-    this.load.audio("audio_pickup", pickOgg);
-    this.load.audio("audio_hurt", hurtOgg);
-    this.load.audio("audio_gameover", gameoverOgg);
-    this.load.audio("music", bgmOgg);
-    this.load.audio("pause_in", pauseIn);
-    this.load.audio("pause_out", pauseOut);
-    this.load.audio("hit_mob", hitMobOgg);
+    // TODO 오디오 로딩에 문제가 있으세욥!
+    // this.load.audio("audio_beam", fireOgg);
+    // this.load.audio("audio_explosion", popOgg);
+    // this.load.audio("audio_pickup", pickOgg);
+    // this.load.audio("audio_hurt", hurtOgg);
+    // this.load.audio("audio_gameover", gameoverOgg);
+    // this.load.audio("music", bgmOgg);
+    // this.load.audio("pause_in", pauseIn);
+    // this.load.audio("pause_out", pauseOut);
+    // this.load.audio("hit_mob", hitMobOgg);
   }
 
   create() {
@@ -123,11 +124,11 @@ export default class LoadingScene extends Phaser.Scene {
       frameRate: 20,
       repeat: -1,
     });
-    this.scene.anims.create({
-      key: "idle_anim", // 애니메이션 키
-      frames: this.scene.anims.generateFrameNumbers("idle"), // 'idle' 이미지에서 프레임을 가져옵니다.
-      frameRate: 8, // 초당 8프레임
-      repeat: -1, // 무한 반복
-    });
+    // this.scene.anims.create({
+    //   key: "idle_anim", // 애니메이션 키
+    //   frames: this.scene.anims.generateFrameNumbers("idle"), // 'idle' 이미지에서 프레임을 가져옵니다.
+    //   frameRate: 8, // 초당 8프레임
+    //   repeat: -1, // 무한 반복
+    // });
   }
 }
